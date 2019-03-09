@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Classification</title>
+
+  <!-- Import TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.2/dist/tf.min.js"></script>
+  <!-- Import tfjs-vis -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@0.4.2/dist/tfjs-vis.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@0.2.2"> </script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <input id = "selector" type="file">
+    <div id = "image_display">
+        <img id="img" src="./no_image.png"></img>
+        <br>
+        <button id="predict">Predict</button>
+    </div>
+    <table id="prediction_table">
+      <tr>
+          <th>Class Names</th>
+          <th>Probability</th>
+      </tr>
+      <tr>
+          <td id="category_one"></td>
+          <td id="probability_one"></td>
+      </tr>
+      <tr>
+          <td id="category_two"></td>
+          <td id="probability_two"></td>
+      </p>
+      <tr>
+          <td id="category_three"></td>
+          <td id="probability_three"></td>
+      </tr>
+    </div>
+</body>
+
+<!-- Import the main script file -->
+<script src="./index.js" type="module"></script>
+
+</html>
